@@ -3,38 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fenn-Dev</title>
+    <title>FennDev</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0 20px;
+            background-image: radial-gradient( circle farthest-corner at 50.4% 50.5%,  rgba(251,32,86,1) 0%, rgba(135,2,35,1) 90% );
+        }
+        h1, h2 {
+            color: #333;
+        }
+        div {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        ul {
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+            background-color: #ffa347;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            &:hover {
+                background-color: darken(#ffa347, 10%);
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            }
+        }
+    </style>
 </head>
 <body>
-    Fenn <br>
-Norway (Remote) · Phone: +47 483 85 966 · Email: rasmussens719@gmail.com <br>
-GitHub: https://github.com/fenn-dev · LinkedIn: https://www.linkedin.com/in/fenn-fox-571486358 <br>
-________________________________________ <br>
-Profile <br>
-I'm Fenn, a self-taught programmer from Norway (born 2008), writing code since 2018. I specialize in clean, efficient, and modular programming with a focus on performance, abstraction, and reusability. I'm now looking for paid remote work, ideally in a junior or freelance development role where I can grow, contribute, and continue learning through real-world experience. <br>
- <br>
-Technical Skills <br>
-Languages: <br>
-C++, C, C#, HTML5, CSS, JavaScript, PHP, SQL <br>
-Libraries & Tools: <br>
-•	C++: iostream, fstream, filesystem, GLFW, OpenGL, ImGui, vector, unordered_map, string, GLM <br>
-•	Web: HTML, CSS, JavaScript, PHP, SQL <br>
-•	Git / GitHub <br>
-Practices & Strengths: <br>
-•	Modular architecture & clean code <br>
-•	Efficient function design & memory handling <br>
-•	Custom file parsing & data storage strategies <br>
-•	Abstraction and reusable software layers <br>
-•	Performance-oriented design and debugging <br>
-________________________________________ <br>
-Current Projects & Learning <br>
-While I haven’t released public projects yet, I actively use GitHub to organize and version my code. I’m currently focused on: <br>
-•	OpenGL graphics and real-time rendering <br>
-•	Building reusable systems for graphics/input <br>
-•	Learning custom data formats and file parsing <br>
-•	Designing layered and abstracted codebases <br>
-________________________________________ <br>
-Mindset <br>
-I'm driven by curiosity and problem-solving. I love learning, improving, and building efficient systems. I take my work seriously and strive to write clean, thoughtful, and optimized code. I'm ready to take the leap into paid work, contribute to real projects, and grow professionally as part of a team or as a freelancer. <br>
+    <div id="header" style="border-top-left-radius: 0; border-top-right-radius: 0; background-color: #f4f4f4; padding: 10px; text-align: center;">
+        <h1>FennDev - Services</h1>
+        <p>Your one-stop solution for all development needs.</p>
+        <button onclick="location.href='/'">Home</button>
+        <button onclick="location.href='/contact'">Contact</button>
+        <button onclick="location.href='/services'">Services</button>
+    </div>
+
+    <div>   
+        <h1>Welcome to FennDev</h1>
+        <p>Your one-stop solution for all development needs.</p>
+        <a href="/services">Explore Our Services</a>
+    </div>
 </body>
 </html>

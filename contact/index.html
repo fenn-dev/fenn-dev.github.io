@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FennDev - Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0 20px;
+            background-image: linear-gradient( 101.7deg,  rgb(181, 245, 161) 10.8%, rgb(158, 240, 142) 57.9%, rgb(99, 186, 106) 101.5% );
+        }
+        h1, h2 {
+            color: #333;
+        }
+        div {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        ul {
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+            background-color: #ffa347;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            &:hover {
+                background-color: darken(#ffa347, 10%);
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            }
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header" style="border-top-left-radius: 0; border-top-right-radius: 0; background-color: #f4f4f4; padding: 10px; text-align: center;">
+        <h1>FennDev - Contact</h1>
+        <p>Your one-stop solution for all development needs.</p>
+        <button onclick="location.href='/'">Home</button>
+        <button onclick="location.href='/contact'">Contact</button>
+        <button onclick="location.href='/services'">Services</button>
+    </div>
+
+    <div>
+        <h1>Contact Us</h1>
+        <p>If you have any questions or would like to discuss a project, feel free to reach out!</p>
+        <br>
+        <p>For payment method. Vipps is preffered but you can also use PayPal.</p>
+    </div>
+
+    <div>
+        <h2>Email</h2>
+        <p>You can email us at: <a href="mailto:thefenndev@gmail.com">TheFennDev@gmail.com</a></p>
+    </div>
+
+    <div>
+        <h2>Phone</h2>
+        <p>Call us at: <a href="tel:+4748385966">+47 483 85 966</a></p>
+    </div>
+
+    <div>
+        <h1>Send form</h1>
+        
+        <form action="https://formspree.io/f/xjkekvke" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required><br>
+        <input type="email" name="email" placeholder="Your Email" required><br>
+        <select name="project" required>
+            <option value="Web Design">Web Design</option>
+            <option value="API Creation">API Creation</option>
+            <option value="Backend Development">Backend Development</option>
+            <option value="Code Review">Code Review</option>
+            <option value="Other">Other</option>
+        </select><br>
+        <textarea name="description" placeholder="Project Description" required></textarea><br>
+        <input type="text" name="timeline" placeholder="Timeline / Deadline"><br>
+        <input type="text" name="budget" placeholder="Budget (optional)">
+        <select name="currency">
+            <option value="NOK">NOK</option>
+            <option value="EUR">EUR</option>
+            <option value="USD">USD</option>
+        </select><br>
+        <button type="submit">Send Inquiry</button>
+        </form>
+
+    </div>
+</body>
+</html>
