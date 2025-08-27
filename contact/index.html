@@ -52,11 +52,35 @@
             box-sizing: border-box;
         }
 
+        #header img {
+            position: absolute;
+            height: 181.667px;
+            display: block;
+            border-radius: 45px;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+
+            transform: translate(-20%, 0);
+            right: 15%;
+        }
+
+        @media screen and (max-width: 768px) {
+            #header img {
+                height: 100px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            #header img {
+                height: 50px;
+                right: 20px;
+            }
+        }
     </style>
 </head>
 <body>
-    <div id="header" style="border-top-left-radius: 0; border-top-right-radius: 0; background-color: #f4f4f4; padding: 10px; text-align: center;">
-        <h1>FennDev - Contact</h1>
+    <div id="header" style="border-top-left-radius: 0; border-top-right-radius: 0; background-color: #f4f4f4; padding: 10px; text-align: center; height: 181.667px; border-bottom-right-radius: 45px;">
+        <img src="../FennDevLogo.jpg" alt="FennDev Logo">
+        <h1>FennDev - Services</h1>
         <p>Your one-stop solution for all development needs.</p>
         <button onclick="location.href='/'">Home</button>
         <button onclick="location.href='/contact'">Contact</button>
