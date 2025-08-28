@@ -12,65 +12,12 @@
             padding: 0 20px;
             background-image: linear-gradient( 101.7deg,  rgba(245,215,161,1) 10.8%, rgba(240,162,142,1) 57.9%, rgba(186,99,117,1) 101.5% );
         }
-        h1, h2 {
-            color: #333;
-        }
-        .content {
-            margin-bottom: 40px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-        ul {
-            margin-left: 20px;
-        }
-        li {
-            margin-bottom: 5px;
-        }
-        button {
-            margin: 5px;
-            padding: 10px 15px;
-            background-color: #ffa347;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-            &:hover {
-                background-color: darken(#ffa347, 10%);
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-            }
-        }
-
-        #header img {
-            position: absolute;
-            height: 181.667px;
-            display: block;
-            border-radius: 45px;
-            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
-
-            transform: translate(-20%, 0);
-            right: 15%;
-        }
-
-        @media screen and (max-width: 768px) {
-            #header img {
-                height: 100px;
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-            #header img {
-                height: 50px;
-                right: 20px;
-            }
-        }
     </style>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
 </head>
 <body>
-    <div id="header" style="border-top-left-radius: 0; border-top-right-radius: 0; background-color: #f4f4f4; padding: 10px; text-align: center; height: 181.667px; border-bottom-right-radius: 45px;">
+    <div id="header">
         <img src="../FennDevLogo.jpg" alt="FennDev Logo">
         <h1>FennDev - Services</h1>
         <p>Your one-stop solution for all development needs.</p>
@@ -117,6 +64,26 @@
         </ul>
         <p>We help businesses and developers improve efficiency with tailor-made software solutions.</p>
         <p><a href="/contact">Contact us</a> to discuss your project and get a free quote!</p>
+    </div>
+
+    <div class="content">
+        <h2>Schematic to Fusion360</h2>
+        <p>We offer services to convert your schematic designs into 3D models in Fusion360, ensuring accuracy and efficiency while following ISO standards.</p>
+        <ul>
+            <li>Accurate 3D modeling from 2D schematics</li>
+            <li>Integration with existing Fusion360 projects</li>
+            <li>Collaboration on design iterations and improvements</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h2>Fusion360 to schematic</h2>
+        <p>We provide services to convert your 3D models in Fusion360 back into informative and accurate 2D schematics following ISO standards.</p>
+        <ul>
+            <li>Accurate 2D schematics generated from 3D models</li>
+            <li>Support for various file formats and standards</li>
+            <li>Collaboration on design changes and updates</li>
+        </ul>
     </div>
 </body>
 </html>
