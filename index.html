@@ -12,77 +12,64 @@
             padding: 0 20px;
             background-image: radial-gradient( circle farthest-corner at 50.4% 50.5%,  rgba(251,32,86,1) 0%, rgba(135,2,35,1) 90% );
         }
-        h1, h2 {
-            color: #333;
-        }
-        div {
-            margin-bottom: 40px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-        ul {
-            margin-left: 20px;
-        }
-        li {
-            margin-bottom: 5px;
-        }
-        button {
-            margin: 5px;
-            padding: 10px 15px;
-            background-color: #ffa347;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-            &:hover {
-                background-color: darken(#ffa347, 10%);
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-            }
-        }
-
-        #header img {
-            position: absolute;
-            height: 181.667px;
-            display: block;
-            border-radius: 45px;
-            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
-
-            transform: translate(-20%, 0);
-            right: 15%;
-        }
-
-        @media screen and (max-width: 768px) {
-            #header img {
-                height: 100px;
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-            #header img {
-                height: 50px;
-                right: 20px;
-            }
-        }
     </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <div id="header" style="border-top-left-radius: 0; border-top-right-radius: 0; background-color: #f4f4f4; padding: 10px; text-align: center; height: 181.667px; border-bottom-right-radius: 45px;">
+    <div id="header">
         <img src="FennDevLogo.jpg" alt="FennDev Logo">
         <h1>FennDev - Services</h1>
-        <p>Your one-stop solution for all development needs.</p>
+        <p>Your one-stop solution for professional development needs.</p>
         <button onclick="location.href='/'">Home</button>
         <button onclick="location.href='/contact'">Contact</button>
         <button onclick="location.href='/services'">Services</button>
     </div>
 
-    <div>   
+    <div class="content">   
         <h1>Welcome to FennDev</h1>
-        <p>Your one-stop solution for all development needs.</p>
+        <p>We provide reliable, custom development solutions tailored to your unique requirements.</p>
         <a href="/services">Explore Our Services</a>
+    </div>
+
+    <div class="content"> 
+        <h2>About Us</h2>
+        <p>At FennDev, we specialize in delivering high-quality, custom-built development solutions designed to match your exact needs.</p>
+        <p>Our services include:</p>
+        <ul>
+            <li>Web Design</li>
+            <li>API Development</li>
+            <li>Backend Development</li>
+            <li>Code Review</li>
+            <li>Fusion 360 Schematics</li>
+            <li>Fusion 360 CAD Modeling</li>
+        </ul>
+    </div>
+
+    <div class="content"> 
+        <h2>Get in Touch</h2>
+        <p>Have questions or want to discuss a project? <a href="/contact">Contact us</a> today!</p>
+    </div>
+
+    <div class="content"> 
+        <h2>Sondre Rasmussen</h2>
+        <p>Sondre Rasmussen is the founder and operator of FennDev, dedicated to delivering high-quality, professional development solutions.</p>
+        <p>He enjoys exploring new technologies and working on personal projects that challenge and expand his skills.</p>
+        <p>Programming since 2019, Sondre has experience in:</p>
+        <ul>
+            <li>C++</li>
+            <li>C</li>
+            <li>C#</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>PHP</li>
+            <li>HTML/CSS</li>
+            <li>SQL</li>
+            <li>Lua</li>
+        </ul>
+        <p>He is also familiar with frameworks and engines such as <strong>Node.js</strong>, <strong>Dear ImGui</strong>, <strong>Unity</strong>, <strong>Unreal Engine</strong>, <strong>Blender</strong>, and <strong>Fusion 360</strong>.</p>
+        <p>Additionally, Sondre has explored electronics and computer logic, learning about binary systems and logic gates. He often experiments with building small computers in games like <strong>Minecraft</strong> and <strong>Scrap Mechanic</strong>.</p>
+        <p>With a strong foundation in programming and a passion for technology, Sondre is well-equipped to tackle a wide range of development challenges.</p>
     </div>
 </body>
 </html>
