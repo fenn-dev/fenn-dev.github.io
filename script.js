@@ -1,4 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("readystatechange", function () {
+    if (document.readyState === "interactive") {
+        startAnimation();
+    }
+});
+
+function startAnimation() {
     let delay = 300;
     let elapsed = 0;
 
@@ -25,4 +31,4 @@ document.addEventListener("DOMContentLoaded", function () {
             div.style.maxHeight = "";
         });
     }, elapsed + 500);
-});
+};
