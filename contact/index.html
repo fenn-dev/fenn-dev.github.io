@@ -3,69 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FennDev - Contact</title>
+    <title>Contact FennDev – Freelance Web Developer & CAD Designer</title>
+    
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Contact FennDev for freelance web development, backend development, API creation, and Fusion 360 CAD services. Reach out via email, PayPal, or the contact form.">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Contact FennDev – Freelance Web Developer & CAD Designer">
+    <meta property="og:description" content="Get in touch with FennDev for custom websites, backend development, API creation, and Fusion 360 CAD modeling.">
+    <meta property="og:image" content="https://fenn-dev.github.io/FennDevLogo.jpg">
+    <meta property="og:url" content="https://fenn-dev.github.io/contact/">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact FennDev – Freelance Web Developer & CAD Designer">
+    <meta name="twitter:description" content="Get in touch with FennDev for custom websites, backend development, API creation, and Fusion 360 CAD modeling.">
+    <meta name="twitter:image" content="https://fenn-dev.github.io/FennDevLogo.jpg">
+
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0 20px;
-            background-image: linear-gradient( 101.7deg,  rgb(181, 245, 161) 10.8%, rgb(158, 240, 142) 57.9%, rgb(99, 186, 106) 101.5% );
+            background-image: linear-gradient(101.7deg, rgb(181, 245, 161) 10.8%, rgb(158, 240, 142) 57.9%, rgb(99, 186, 106) 101.5%);
         }
     </style>
-    <link rel="stylesheet" href="../style.css">
-    <script src="../script.js"></script>
 </head>
 <body>
     <div id="header">
         <img src="../FennDevLogo.jpg" alt="FennDev Logo">
-        <h1>FennDev - Services</h1>
-        <p>Your one-stop solution for all development needs.</p>
+        <h2>FennDev - Contact</h2> <!-- tagline/navigation -->
+        <p>Your one-stop solution for professional development needs.</p>
         <button onclick="location.href='/'">Home</button>
         <button onclick="location.href='/contact'">Contact</button>
         <button onclick="location.href='/services'">Services</button>
     </div>
 
-    <div class="content"> 
-        <h1>Contact Us</h1>
-        <p>If you have any questions or would like to discuss a project, feel free to reach out!</p>
-        <br>
-        <p>For payment method. Vipps is preffered but you can also use PayPal.</p>
+    <div class="content">
+        <h1>Contact FennDev – Freelance Web Developer & CAD Designer</h1> <!-- main SEO headline -->
+        <p>Want to hire a freelance web developer for web design, API creation, or backend solutions? Reach out via email, PayPal, or the form below to discuss your project.</p>
+    </div>
+
+    <div class="content">
+        <h2>Contact Methods</h2>
+        <h3>Email</h3>
+        <p>Preferred contact method: email <a href="mailto:thefenndev@gmail.com">TheFennDev@gmail.com</a> for freelance web development, backend systems, or Fusion 360 CAD inquiries.</p>
+
+
+        <h3>Payment</h3>
+        <p>For payments, we accept PayPal for secure transactions related to FennDev projects:</p>
         <ul>
-            <li>PayPal: <a href="https://paypal.me/FoxGaming208" target="_blank">paypal.me/FoxGaming208</a></li>
+            <li>PayPal: <a href="https://paypal.me/FoxGaming208" target="_blank" rel="noopener noreferrer">paypal.me/FoxGaming208</a></li>
         </ul>
     </div>
 
-    <div class="content"> 
-        <h2>Email</h2>
-        <h3>Preferred contact method</h3>
-        <p>You can email us at: <a href="mailto:thefenndev@gmail.com">TheFennDev@gmail.com</a></p>
-    </div>
-
-    <div>
-        <h1>Send form</h1>
-        <h3>Not reccommended but you can still use it</h3>
+    <div class="content">
+        <h2>Send an Inquiry</h2>
+        <p>Fill out the form below to discuss your project directly with FennDev.</p>
         <form action="https://formspree.io/f/xjkekvke" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required><br>
-        <input type="email" name="email" placeholder="Your Email" required><br>
-        <select name="project" required>
-            <option value="Web Design">Web Design</option>
-            <option value="API Creation">API Creation</option>
-            <option value="Backend Development">Backend Development</option>
-            <option value="Code Review">Code Review</option>
-            <option value="Fusion360 schematics">Fusion360 schematics</option>
-            <option value="Fusion360 Cad modeling">Fusion360 Cad modeling</option>
-            <option value="Other">Other</option>
-        </select><br>
-        <textarea name="description" placeholder="Project Description" required></textarea><br>
-        <input type="text" name="timeline" placeholder="Timeline / Deadline"><br>
-        <input type="text" name="budget" placeholder="Budget (optional)">
-        <select name="currency">
-            <option value="NOK">NOK</option>
-            <option value="EUR">EUR</option>
-            <option value="USD">USD</option>
-        </select><br>
-        <button type="submit">Send Inquiry</button>
+            <label for="name">Your Name</label><br>
+            <input id="name" type="text" name="name" placeholder="Your Name" required><br>
+
+            <label for="email">Your Email</label><br>
+            <input id="email" type="email" name="email" placeholder="Your Email" required><br>
+
+            <label for="project">Project Type</label><br>
+            <select id="project" name="project" required>
+                <option value="Web Design">Web Design</option>
+                <option value="API Creation">API Creation</option>
+                <option value="Backend Development">Backend Development</option>
+                <option value="Code Review">Code Review</option>
+                <option value="Fusion360 Schematics">Fusion360 Schematics</option>
+                <option value="Fusion360 CAD Modeling">Fusion360 CAD Modeling</option>
+                <option value="Other">Other</option>
+            </select><br>
+
+            <label for="description">Project Description</label><br>
+            <textarea id="description" name="description" placeholder="Project Description" required></textarea><br>
+
+            <label for="timeline">Timeline / Deadline</label><br>
+            <input id="timeline" type="text" name="timeline" placeholder="Timeline / Deadline"><br>
+
+            <label for="budget">Budget (optional)</label><br>
+            <input id="budget" type="text" name="budget" placeholder="Budget">
+            <label for="currency">Currency</label><br>
+            <select id="currency" name="currency" required>
+                <option value="NOK">NOK</option>
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+            </select><br>
+
+            <button type="submit">Send Inquiry</button>
         </form>
     </div>
 </body>
